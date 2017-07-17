@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.patrickiv.demo.enteranimationdemo.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/default_spacing_medium"
+        android:orientation="horizontal"
+        style="@style/AppCompat.Elevation"
+        >
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_reload"
+            android:layout_marginStart="@dimen/default_spacing_small"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+    </LinearLayout>
+
+
+    <com.patrickiv.demo.enteranimationdemo.recyclerview.GridRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_spacing_small"
+        android:clipToPadding="false"
+        />
+
+</LinearLayout>
