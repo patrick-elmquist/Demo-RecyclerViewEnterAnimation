@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.patrickiv.demo.enteranimationdemo.MainActivity"
+    >
+
+    <include layout="@layout/include_toolbar" />
+
+    <com.patrickiv.demo.enteranimationdemo.recyclerview.GridRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_spacing_small"
+        android:clipToPadding="false"
+        />
+
+</LinearLayout>

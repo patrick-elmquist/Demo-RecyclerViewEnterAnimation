@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="AppCompat.Elevation">
-        <item name="android:elevation">4dp</item>
-    </style>
-
-</resources>
