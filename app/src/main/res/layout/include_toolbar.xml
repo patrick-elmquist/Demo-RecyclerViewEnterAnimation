@@ -7,6 +7,7 @@
     android:background="@color/colorPrimary"
     android:padding="@dimen/default_spacing_medium"
     android:orientation="horizontal"
+    android:elevation="@dimen/toolbar_elevation"
     >
 
     <Spinner

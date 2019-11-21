@@ -1,11 +1,8 @@
 package com.patrickiv.demo.enteranimationdemo
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.patrickiv.demo.enteranimationdemo.fragment.GridDemoFragment
 import com.patrickiv.demo.enteranimationdemo.fragment.ListDemoFragment
 import kotlinx.android.synthetic.main.activity_main.buttonContainer
@@ -29,17 +26,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-        Log.d("PKET", "OnClick fragment: ${(view as? TextView)?.text}")
-        when (view.id) {
+        val fragment = when (view.id) {
             R.id.listSample -> ListDemoFragment.instance(withHeader = false)
             R.id.headerSample -> ListDemoFragment.instance(withHeader = true)
             else -> GridDemoFragment()
-        }.show()
+        }
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, fragment)
+            .addToBackStack(null)
+            .commit()
     }
-
-    private fun Fragment.show() = supportFragmentManager.beginTransaction()
-        .replace(R.id.container, this)
-        .addToBackStack(null)
-        .commit()
-        .also { Log.d("PKET", "Show fragment: ${javaClass.simpleName}") }
 }
