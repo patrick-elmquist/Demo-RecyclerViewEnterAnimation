@@ -6,4 +6,5 @@
     <color name="colorAccent">#FFC107</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#757575</color>
+    <color name="header_background">@color/colorPrimaryDark</color>
 </resources>

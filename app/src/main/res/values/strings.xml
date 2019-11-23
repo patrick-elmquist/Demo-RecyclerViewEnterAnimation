@@ -2,5 +2,14 @@
     <string name="app_name">Enter Animation Demo</string>
     <string name="button_reload">Reload</string>
     <string name="button_list">List</string>
+    <string name="button_list_with_header">List with header</string>
     <string name="button_grid">Grid</string>
+
+    <string name="animation_slide_from_right">Slide from right</string>
+    <string name="animation_slide_from_bottom">Slide from bottom</string>
+    <string name="animation_fall_down">Fall down</string>
+    <string name="animation_scale">Scale</string>
+    <string name="animation_scale_random">Scale random</string>
+
+    <string name="header_title">First item in the list</string>
 </resources>

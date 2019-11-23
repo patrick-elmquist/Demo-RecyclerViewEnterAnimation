@@ -8,8 +8,8 @@
     >
 
     <LinearLayout
-        android:id="@+id/button_container"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonContainer"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -17,22 +17,35 @@
         tools:ignore="UselessParent"
         >
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_list_fragment"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/listSample"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_list"
             style="@style/Widget.AppCompat.Button.Colored"
             />
 
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="@dimen/default_spacing_small"
             android:layout_height="@dimen/default_spacing_small"
             />
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_grid_fragment"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/headerSample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_list_with_header"
+            style="@style/Widget.AppCompat.Button.Colored"
+            />
+
+        <Space
+            android:layout_width="@dimen/default_spacing_small"
+            android:layout_height="@dimen/default_spacing_small"
+            />
+
+        <Button
+            android:id="@+id/gridSample"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_grid"
             style="@style/Widget.AppCompat.Button.Colored"

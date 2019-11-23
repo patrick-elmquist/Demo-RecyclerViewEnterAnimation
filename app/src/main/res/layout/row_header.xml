@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:background="@color/header_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="@dimen/default_spacing_large"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:text="@string/header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
+
+</FrameLayout>
